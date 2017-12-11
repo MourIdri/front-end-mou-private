@@ -1,0 +1,113 @@
+    1  nano /etc/ssh/sshd_config
+    3  service sshd restart
+    4  service ssh restart
+    6  sudo apt-get update
+    7  sudo apt-get install apache2 ifstat inetutils-traceroute traceroute telnet curl python python-pip python3-pip install libapache2-mod-python
+    8  service apache2 start
+   21  pip install requests
+   22  pip3 install requests
+   24  pip install ConfigParser 
+   24  pip install mysql-connector-python
+   24  pip install ConfigParser
+   24  sudo a2enmod cgi
+
+
+   39  mkdir /var/www/html/cgi-bin/sessions_log
+   77  chmod a+rwx /var/www/html/cgi-bin/sessions_log
+   77  chmod a+rwx /var/www/html/cgi-bin/
+
+   39  mkdir /var/www/html/cgi-bin/
+   40  nano /etc/apache2/apache2.conf
+   41  nano /etc/apache2/conf-enabled/serve-cgi-bin.conf
+******************Telecharger checkout.py dans /var/www/html/cgi-bin
+   44  chmod +x  /var/www/html/cgi-bin/checkout.py
+   47  ls
+   48  mv -rf cgi-bin/ html/
+   49  ls
+   50  ls cgi-bin/
+   51  mkdir html/cgi-bin
+   52  mv cgi-bin/* html/cgi-bin/
+   53  chmod +x html/cgi-bin/*
+   54  sudo nano /etc/apache2/apache2.conf
+   55  nano /etc/apache2/conf-enabled/serve-cgi-bin.conf
+   56  service apache2 restart
+
+
+
+   64  nano /etc/apache2/sites-enabled/000-default.conf
+   65  sudo nano /etc/apache2/apache2.conf
+   66  nano /etc/apache2/sites-enabled/000-default.conf
+   67  sudo nano /etc/apache2/apache2.conf
+   68  ls
+   69  nano checkout.py
+   70  cat checkout.py_bkp
+   71  ls
+   72  cat /var/log/apache2/error.log
+   73  cd /var/www/html/cgi-bin/
+   74  ls
+   75  cd ..
+   76  ls
+
+   82  pip install flask-restful
+   83  curl -H "Content-Type: application/json" -X POST -d '{"username":"xyz","password":"xyz"}' http://10.100.2.4:80/customerupdate
+   84  curl -H "Content-Type: application/json" -X POST -d '{'CurrentMail': CurrentMail, 'STRUserUUID1': STRUserUUID1, 'FirstName': FirstName, 'LastName': LastName,  'CurrentCompany': CurrentCompany, 'JobRole': JobRole  }' http://10.100.2.4:80/customerupdate
+   85  curl -H "Content-Type: application/json" -X POST -d '{'CurrentMail': 'CurrentMail', 'STRUserUUID1': 'STRUserUUID1', 'FirstName': 'FirstName', 'LastName': 'LastName',  'CurrentCompany': 'CurrentCompany', 'JobRole': 'JobRole'  }' http://10.100.2.4:80/customerupdate
+   86  curl -H "Content-Type: application/json" -X POST -d '{"CurrentMail": "CurrentMail", "STRUserUUID1": "STRUserUUID1", "FirstName": "FirstName", "LastName": "LastName",  "CurrentCompany": "CurrentCompany", "JobRole": "JobRole"}' http://10.100.2.4:80/customerupdate
+   87  ls
+   88  curl -H "Content-Type: application/json" -X POST -d '{"CurrentMail": "CurrentMail", "STRUserUUID1": "STRUserUUID1", "FirstName": "FirstName", "LastName": "LastName",  "CurrentCompany": "CurrentCompany", "JobRole": "JobRole"}' http://10.100.2.4:80/customerupdate
+   89  curl -H "Content-Type: application/json" -X POST -d '{"CurrentMail": "CurrentMail", "STRUserUUID1": "STRUserUUID1", "FirstName": "FirstName", "LastName": "LastName",  "CurrentCompany": "CurrentCompany", "JobRole": "JobRole"}' http://10.100.2.6:80/customerupdate
+   90  curl -H "Content-Type: application/json" -X POST -d '{"CurrentMail": "CurrentMail", "STRUserUUID1": "STRUserUUID1", "FirstName": "FirstName", "LastName": "LastName",  "CurrentCompany": "CurrentCompany", "JobRole": "JobRole"}' http://10.100.2.4:80/customerupdate
+   91  curl -H "Content-Type: application/json" -X POST -d '{"CurrentMail": "CurrentMail", "STRUserUUID1": "STRUserUUID1", "FirstName": "FirstName", "LastName": "LastName",  "CurrentCompany": "CurrentCompany", "JobRole": "JobRole"}' http://10.100.2.6:80/customerupdate
+   92  curl -H "Content-Type: application/json" -X POST -d '{"CurrentMail": "CurrentMail", "STRUserUUID1": "STRUserUUID1", "FirstName": "FirstName", "LastName": "LastName",  "CurrentCompany": "CurrentCompany", "JobRole": "JobRole"}' http://10.100.2.4:80/customerupdate
+   93  curl -H "Content-Type: application/json" -X POST -d '{"CurrentMail": "CurrentMail", "STRUserUUID1": "STRUserUUID1", "FirstName": "FirstName", "LastName": "LastName",  "CurrentCompany": "CurrentCompany", "JobRole": "JobRole"}' http://10.100.2.6:80/customerupdate
+   94  curl -X GET http://demomouradntierappapi.eastus.cloudapp.azure.com:80/
+   95  cd /var/www/html/
+   96  ls
+   97  ls cgi-bin/sessions_log/
+   98  rm cgi-bin/sessions_log/*
+   99  curl -H "Content-Type: application/json" -X POST -d '{"CurrentMail": "CurrentMail", "STRUserUUID1": "STRUserUUID1", "FirstName": "FirstName", "LastName": "LastName",  "CurrentCompany": "CurrentCompany", "JobRole": "JobRole"}' http://10.100.2.4:80/customerupdate
+  100  curl -H "Content-Type: application/json" -X POST -d '{"CurrentMail": "CurrentMail", "STRUserUUID1": "STRUserUUID1", "FirstName": "FirstName", "LastName": "LastName",  "CurrentCompany": "CurrentCompany", "JobRole": "JobRole"}' http://10.100.2.4:80/customerupdate/
+  101  curl -H "Content-Type: application/json" -X POST -d '{"CurrentMail": "CurrentMail", "STRUserUUID1": "STRUserUUID1", "FirstName": "FirstName", "LastName": "LastName",  "CurrentCompany": "CurrentCompany", "JobRole": "JobRole"}' http://10.100.2.4:80/customerupdate
+  102  curl -H "Content-Type: application/json" -X POST -d '{"CurrentMail": "CurrentMail", "STRUserUUID1": "STRUserUUID1", "FirstName": "FirstName", "LastName": "LastName",  "CurrentCompany": "CurrentCompany", "JobRole": "JobRole"}' http://10.100.2.4:80/customerupdate/
+  103  curl -H "Content-Type: application/json" -X POST -d '{"CurrentMail": "CurrentMail", "STRUserUUID1": "STRUserUUID1", "FirstName": "FirstName", "LastName": "LastName",  "CurrentCompany": "CurrentCompany", "JobRole": "JobRole"}' http://10.100.2.4:80/customerupdate
+  104  curl -H "Content-Type: application/json" -X POST -d '{"CurrentMail": "CurrentMail", "STRUserUUID1": "STRUserUUID1", "FirstName": "FirstName", "LastName": "LastName",  "CurrentCompany": "CurrentCompany", "JobRole": "JobRole"}' http://10.100.2.5:80/customerupdate
+  105  curl -H "Content-Type: application/json" -X POST -d '{"CurrentMail": "CurrentMail", "STRUserUUID1": "STRUserUUID1", "FirstName": "FirstName", "LastName": "LastName",  "CurrentCompany": "CurrentCompany", "JobRole": "JobRole"}' http://10.100.2.6:80/customerupdate
+  106  curl -H "Content-Type: application/json" -X POSTis@ms.com", "STRUserUUID1": "FFFFFFFFF5-44444-5555", "FirstName": "moi", "LastName": "driss",  "CurrentCompany": "MS", "JobRole": "TSP"}' http://10.100.2.6:80/customerupdate
+  107  curl -H "Content-Type: application/json" -X POSTis@ms.com", "STRUserUUID1": "FFFFFFFFF5-44444-5555", "FirstName": "moi", "LastName": "driss",  "CurrentCompany": "MS", "JobRole": "TSP"}' http://10.100.2.6:80/customerupdate
+  108  top
+  109  netstat
+  110  ifstat
+  111  apt install ifstat
+  112  ifstat
+  113  ifstat --help
+  114  top
+  115  ifstat
+  116  Y
+  117  ssh root@10.100.1.4
+  118  ssh root@10.100.1.5
+  119  ifconfig
+  120  ssh root@10.100.2.5
+  121  cd /var/www/html/cgi-bin/
+  122  ls
+  123  chmod 777 myscript-1.py
+  124  ls
+  125  cd ..
+  126  ls
+  127  chmod a+rwx cgi-bin
+  128  ls
+  129  ls cgi-bin/
+  130  chmod +x cgi-bin/checkout.py
+  131  ls cgi-bin/
+  132  chmod +x cgi-bin/checkout*
+  133  chmod a+rwx cgi-bin
+  134  chmod a+rwx cgi-bin/sessions_log
+  135  ls
+  136  cd /var/www/html/
+  137  nano cgi-bin/checkout.py
+  138  cat cgi-bin/user_picture.jpg
+  139  1;2c1;2c1;2c1;2c1;2c1;2c1;2c
+  140  nano cgi-bin/checkout.py
+  141  python cgi-bin/checkout.py
+  142  nano cgi-bin/checkout.py
+  143  nano /var/www/html/cgi-bin/checkout.py
+  144  history
