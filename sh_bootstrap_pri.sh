@@ -27,7 +27,7 @@ mkdir /tmp/temp-website/
 cd /tmp/temp-website/
 rm -rf /tmp/temp-website/*
 
-git clone  https://github.com/MourIdri/front-end-mou-cust.git
+git clone  https://github.com/MourIdri/front-end-mou-private.git
 cp -R /tmp/temp-website/front-end-mou-cust/* /var/www/html/
 
 mkdir /var/www/html/cgi-bin/sessions_log
